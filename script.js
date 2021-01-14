@@ -28,10 +28,10 @@ btnRock.addEventListener("click", function() {
     let theResult = result()
 
     player.querySelector("img").remove()
-    player.innerHTML = '<h2>Player</h2><img src="assets/rock.png" width="200">'
+    player.innerHTML = '<h2>Player</h2><img src="assets/rock.png" class="w-100">'
     
     computer.querySelector("img").remove()
-    computer.innerHTML = '<h2>Computer</h2><img src="assets/' + theResult + '.png" width="200">'
+    computer.innerHTML = '<h2>Computer</h2><img src="assets/' + theResult + '.png" class="w-100">'
 
     if (theResult === 'paper') {
         lose++
@@ -52,10 +52,10 @@ btnPaper.addEventListener("click", function() {
     let theResult = result()
 
     player.querySelector("img").remove()
-    player.innerHTML = '<h2>Player</h2><img src="assets/paper.png" width="200">'
+    player.innerHTML = '<h2>Player</h2><img src="assets/paper.png" class="w-100">'
     
     computer.querySelector("img").remove()
-    computer.innerHTML = '<h2>Computer</h2><img src="assets/' + theResult + '.png" width="200">'
+    computer.innerHTML = '<h2>Computer</h2><img src="assets/' + theResult + '.png" class="w-100">'
 
     if (theResult === 'paper') {
         draw++
@@ -76,10 +76,10 @@ btnScissors.addEventListener("click", function() {
     let theResult = result()
 
     player.querySelector("img").remove()
-    player.innerHTML = '<h2>Player</h2><img src="assets/scissors.png" width="200">'
+    player.innerHTML = '<h2>Player</h2><img src="assets/scissors.png" class="w-100">'
     
     computer.querySelector("img").remove()
-    computer.innerHTML = '<h2>Computer</h2><img src="assets/' + theResult + '.png" width="200">'
+    computer.innerHTML = '<h2>Computer</h2><img src="assets/' + theResult + '.png" class="w-100">'
 
     if (theResult === 'paper') {
         win++
